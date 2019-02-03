@@ -16,12 +16,12 @@ func isSafe(m *[][]int, row int, col int) bool {
 }
 
 func dfs(m *[][]int, row int, col int, count *int) {
-	rowNbr := [4]int{-1, 1, 0, 0}
-	colNbr := [4]int{0, 0, -1, 1}
+	rowNbr := [8]int{-1, -1, -1, 0, 0, 1, 1, 1}
+	colNbr := [8]int{-1, 0, 1, -1, 1, -1, 0, 1}
 
 	(*m)[row][col] = 0
 
-	for i := 0; i < 4; i++ {
+	for i := 0; i < 8; i++ {
 		if isSafe(m, row+rowNbr[i], col+colNbr[i]) {
 			(*count)++
 			dfs(m, row+rowNbr[i], col+colNbr[i], count)
@@ -49,9 +49,9 @@ func main() {
 
 	// create test array
 	m := [][]int{
-		{0, 0, 0, 1, 0, 1},
+		{0, 0, 0, 0, 0, 1},
 		{0, 1, 1, 0, 1, 1},
-		{0, 0, 1, 0, 1, 1},
+		{0, 0, 1, 0, 0, 1},
 		{0, 0, 0, 0, 1, 0},
 	}
 

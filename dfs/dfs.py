@@ -16,10 +16,10 @@ class DFS:
         return largest
     def Search(self, x, y):
         '''Search performs recursive dfs search on arr'''
-        rowNbr = [-1,1,0,0]
-        colNbr = [0,0,-1,1]
+        rowNbr = [-1, -1, -1, 0, 0, 1, 1, 1]
+        colNbr = [-1, 0, 1, -1, 1, -1, 0, 1]
         self.arr[x][y] = 0
-        for i in range(4):
+        for i in range(len(rowNbr)):
             row = x + rowNbr[i]
             col = y + colNbr[i]
             if self.IsSafe(row, col):
@@ -37,9 +37,9 @@ class DFS:
 
 # Test dfs class
 arr = [
-[0,0,0,1,0,1],
+[0,0,0,0,0,1],
 [0,1,1,0,1,1],
-[0,0,1,1,1,1],
+[0,0,1,0,0,1],
 [0,0,0,0,1,0]
 ]
 dfs = DFS(arr)
