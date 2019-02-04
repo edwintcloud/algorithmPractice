@@ -1,8 +1,8 @@
-def find_duplicates(arr):
+def find_duplicates(numbers):
     result = {}
 
     # first we must sort the array
-    arr.sort()
+    arr = sorted(numbers)
 
     # next we compare if each next element is same as current
     # if they are the same, add to result
@@ -25,4 +25,6 @@ for i in range(1, 101):
         numbers[i-1] = i
     if i == duplicates[0]:
         numbers[i-2] = i
-print(find_duplicates(numbers))
+results = find_duplicates(numbers)
+print("Numbers: ", numbers)
+print("Duplicates: ", results)

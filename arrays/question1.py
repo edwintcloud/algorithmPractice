@@ -1,8 +1,8 @@
-def find_missing(arr):
+def find_missing(numbers):
     result = []
 
     # first we must sort the array
-    arr.sort()
+    arr = sorted(numbers)
 
     # next we iterate through, looking to see if the next element exists
     # if the element doesn't exist, we append the missing element to result
@@ -20,4 +20,6 @@ numbers = []
 for i in range(1, 100):
     if i != omit:
         numbers.append(i)
-print(find_missing(numbers))
+result = find_missing(numbers)
+print("Numbers: ", numbers)
+print("Missing Numbers: ", result)
