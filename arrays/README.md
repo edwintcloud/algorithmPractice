@@ -1,9 +1,9 @@
 # Array Questions
 1. How do you find the missing number in a given integer array of 1 to 100? [solution](/arrays/question1.py)
-2. How do you find the duplicate number on a given integer array? [solution](/arrays/question2.py)
+2. How do you find the duplicate number on a given integer array? [solution](/arrays/question5and2.py)
 3. How do you find the largest and smallest number in an unsorted integer array? [solution](/arrays/question3.py)
 4. How do you find all pairs of an integer array whose sum is equal to a given number? [solution](/arrays/question4.py)
-5. How do you find duplicate numbers in an array if it contains multiple duplicates? [solution](/arrays/question5.py)
+5. How do you find duplicate numbers in an array if it contains multiple duplicates? [solution](/arrays/question5and2.py)
 6. How are duplicates removed from a given array in Python? [solution](/arrays/question6.py)
 7. How is an integer array sorted in place using the quicksort algorithm? [solution](/arrays/question7.py)
 8. How do you remove duplicates from an array in place? [solution](/arrays/question8.py)
