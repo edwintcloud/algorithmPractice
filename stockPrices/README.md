@@ -234,3 +234,6 @@ The "best answer so far" is, of course, the max profit that we can get based on 
 The "additional value" is the minimum price we've seen so far. If we keep that updated, we can use it to calculate the new max profit so far in constant time. The max profit is the larger of:
 1. The previous max profit
 2. The max profit we can get by selling now (the current price minus the minimum price seen so far)
+```
+Note: This question and solution was found on interviewcake.com
+```
