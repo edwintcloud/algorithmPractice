@@ -1,0 +1,11 @@
+# Array Coding Interview Questions
+1. How do you find the missing number in a given integer array of 1 to 100? [solution](/question1.py)
+2. How do you find the duplicate number on a given integer array? [solution](/question2.py)
+3. How do you find the largest and smallest number in an unsorted integer array? [solution](/question3.py)
+4. How do you find all pairs of an integer array whose sum is equal to a given number? [solution](/question4.py)
+5. How do you find duplicate numbers in an array if it contains multiple duplicates? [solution](/question5.py)
+6. How are duplicates removed from a given array in Python? [solution](/question6.py)
+7. How is an integer array sorted in place using the quicksort algorithm? [solution](/question7.py)
+8. How do you remove duplicates from an array in place? [solution](/question8.py)
+9. How do you reverse an array in place in Python? [solution](/question9.py)
+10. How are duplicates removed from an array without using any library? [solution](/question10.py)
