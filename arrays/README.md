@@ -1,4 +1,4 @@
-# Array Coding Interview Questions
+# Array Questions
 1. How do you find the missing number in a given integer array of 1 to 100? [solution](/arrays/question1.py)
 2. How do you find the duplicate number on a given integer array? [solution](/arrays/question2.py)
 3. How do you find the largest and smallest number in an unsorted integer array? [solution](/arrays/question3.py)

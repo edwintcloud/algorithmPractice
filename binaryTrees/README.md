@@ -1,0 +1,11 @@
+# Binary Tree Questions
+1. How is a binary search tree implemented? [solution](/binaryTrees/question1.py)
+2. How do you perform preorder traversal in a given binary tree? [solution](/binaryTrees/question2.py)
+3. How do you traverse a given binary tree in preorder without recursion? [solution](/binaryTrees/question3.py)
+4. How do you perform an inorder traversal in a given binary tree? [solution](/binaryTrees/question4.py)
+5. How do you print all nodes of a given binary tree using inorder traversal without recursion? [solution](/binaryTrees/question5.py)
+6. How do you implement a postorder traversal algorithm? [solution](/binaryTrees/question6.py)
+7. How do you traverse a binary tree in postorder traversal without recursion? [solution](/binaryTrees/question7.py)
+8. How are all leaves of a binary search tree printed? [solution](/binaryTrees/question8.py)
+9. How do you count a number of leaf nodes in a given binary tree? [solution](/binaryTrees/question9.py)
+10. How do you perform a binary search in a given array? [solution](/binaryTrees/question10.py)

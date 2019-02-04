@@ -1,0 +1,13 @@
+# String Questions
+1. How do you print duplicate characters from a string? [solution](/strings/question1.py)
+2. How do you check if two strings are anagrams of each other? [solution](/strings/question2.py)
+3. How do you print the first non-repeated character from a string? [solution](/strings/question3.py)
+4. How can a given string be reversed using recursion? [solution](/strings/question4.py)
+5. How do you check if a string contains only digits? [solution](/strings/question5.py)
+6. How are duplicate characters found in a string? [solution](/strings/question6.py)
+7. How do you count a number of vowels and consonants in a given string? [solution](/strings/question7.py)
+8. How do you count the occurrence of a given character in a string? [solution](/strings/question8.py)
+9. How do you find all permutations of a string? [solution](/strings/question9.py)
+10. How do you reverse words in a given sentence without using any library method? [solution](/strings/question10.py)
+11. How do you check if two strings are a rotation of each other? [solution](/strings/question11.py)
+12. How do you check if a given string is a palindrome? [solution](/strings/question12.py)
