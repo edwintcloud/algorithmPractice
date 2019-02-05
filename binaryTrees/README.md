@@ -6,6 +6,6 @@
 5. How do you print all nodes of a given binary tree using inorder traversal without recursion? [solution](/binaryTrees/question5.py)
 6. How do you implement a postorder traversal algorithm? [solution](/binaryTrees/question6.py)
 7. How do you traverse a binary tree in postorder traversal without recursion? [solution](/binaryTrees/question7.py)
-8. How are all leaves of a binary search tree printed? [solution](/binaryTrees/question8.py)
-9. How do you count a number of leaf nodes in a given binary tree? [solution](/binaryTrees/question9.py)
+8. How are all leaves of a binary search tree printed? [solution](/binaryTrees/question8and9.py)
+9. How do you count a number of leaf nodes in a given binary tree? [solution](/binaryTrees/question8and9.py)
 10. How do you perform a binary search in a given array? [solution](/binaryTrees/question10.py)
