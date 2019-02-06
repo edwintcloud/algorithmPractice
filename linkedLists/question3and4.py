@@ -48,7 +48,29 @@ class LinkedList:
         for i in range(len(stack)-1, 0, -1):
             stack[i].next = stack[i-1]
 
+    def Reverse_Recursive(self, stack=None):
+        
+        # build node stack
+        if stack is None:
+            stack = []
+            node = self.head
+            while node:
+                stack.append(node)
+                node = node.next
 
+            # set the head to the last node in stack
+            self.head = stack[-1]
+
+            # set the first node in stack to point to None
+            stack[0].next = None
+        
+        # set last node in stack to point to next to last node
+        stack[-1].next = stack[-2]
+
+        # recursively run the line above, removing each element as we 
+        # go down the stack, once our stack is down to the last node, recursion stops
+        if len(stack) > 2:
+            self.Reverse_Recursive(stack[:-1])
         
 
 # test linked list
@@ -56,4 +78,7 @@ linked_list = LinkedList([5,4,3,3,2,1])
 print("Linked List: ", linked_list)
 print("Prepare for Reversal!")
 linked_list.Reverse()
+print("Linked List: ", linked_list)
+print("Reverse Reverse!")
+linked_list.Reverse_Recursive()
 print("Linked List: ", linked_list)
