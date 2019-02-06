@@ -7,3 +7,4 @@
 6. How do you implement a counting sort algorithm? [solution](/misc/question6.py)
 7. How is a radix sort algorithm implemented? [solution](/misc/question7.py)
 8. How do you swap two numbers without using the third variable? [solution](/misc/question8.py)
+9. How do you implement a stack in python? How can you find the min and max of the stack in 0(1) time? [solution](/misc/question9.py)
