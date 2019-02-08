@@ -8,3 +8,4 @@
 7. How is a radix sort algorithm implemented? [solution](/misc/question7.py)
 8. How do you swap two numbers without using the third variable? [solution](/misc/question8.py)
 9. How do you implement a stack in python? How can you find the min and max of the stack in 0(1) time? [solution](/misc/question9.py)
+10. Given an array of integers. Find a peak element in it. An array element is peak if it is NOT smaller than its neighbors. Do this in O(log n) time complexity. [solution](/misc/question10.py)
