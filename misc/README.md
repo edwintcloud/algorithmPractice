@@ -9,3 +9,5 @@
 8. How do you swap two numbers without using the third variable? [solution](/misc/question8.py)
 9. How do you implement a stack in python? How can you find the min and max of the stack in 0(1) time? [solution](/misc/question9.py)
 10. Given an array of integers. Find a peak element in it. An array element is peak if it is NOT smaller than its neighbors. Do this in O(log n) time complexity. [solution](/misc/question10.py)
+11. Compute the nth number in the fibonacci sequence in O(1) space and time complexity. [solution](/misc/question11.py)
+12. Given a 2d matrix, determine if all the 0s are connected to form a contiguous group of 0s. Diagonals do not count. [solution](/misc/question12.py)
