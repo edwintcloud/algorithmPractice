@@ -1,4 +1,5 @@
 class Stack:
+    '''Stack is a class implmentation of a stack'''
 
     def __init__(self, data=[]):
         self.data = []
@@ -14,10 +15,10 @@ class Stack:
                     self.min = item
                 self.data.append(item)
             self.sorted = sorted(self.data)
-    
+
     def __str__(self):
         return str(self.data)
-    
+
     def __radd__(self, other):
         return other + self.__str__()
 
@@ -30,7 +31,7 @@ class Stack:
             self.min = self.sorted[0]
             self.sorted.pop(0)
         return item
-    
+
     def push(self, data):
         if data > self.max:
             self.max = data
@@ -40,12 +41,13 @@ class Stack:
 
     def min(self):
         return self.min
-    
+
     def max(self):
         return self.max
 
-# test stack
-arr = [3,55,32,12,4,16,55,9,92,13,44,13]
+
+## TEST ##
+arr = [3, 55, 32, 12, 4, 16, 55, 9, 92, 13, 44, 13]
 print("Stack: ", arr)
 result = Stack(arr)
 print("Min: ", result.min, "Max: ", result.max)
@@ -66,4 +68,3 @@ print("Popping the stack")
 print("Stack: ", result)
 print("Min: ", result.min, "Max: ", result.max)
 result.pop()
-
