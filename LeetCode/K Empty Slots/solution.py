@@ -3,7 +3,8 @@ def k_empty_slots(flowers, k):
                 list of positions for each day the flowers will bloom
        @param k:
                 integer representing the required distance between two bloomed flowers in which no flowers have bloomed
-       @return: day satisfying k'''
+       @return: 
+                day satisfying k'''
 
     # initialize a zero filled list the length of flowers
     days = [0] * len(flowers)
