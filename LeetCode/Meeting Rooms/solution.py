@@ -1,7 +1,7 @@
 def meeting_rooms(arr):
     '''meeting_rooms finds the number of meeting rooms 
     needed based on the input arr of lists of start time, end time
-    Time Cotimeslexity: O(n+n+n log n) => O(n log n)'''
+    Time Complexity: O(n+n+n log n) => O(n log n)'''
 
     # create a dictionary
     times = {}
