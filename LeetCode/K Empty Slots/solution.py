@@ -5,11 +5,11 @@ def k_empty_slots(flowers, k):
                 integer representing the required distance between two bloomed flowers in which no flowers have bloomed
        @return: day satisfying k'''
 
-    # initialize an zero filled list the length of flowers
+    # initialize a zero filled list the length of flowers
     days = [0] * len(flowers)
 
     # fill days with days[position-1] = day
-    # the opposite of flowers[day-1] = position
+    # the opposite of flowers which is flowers[day-1] = position
     for i in range(len(flowers)):
         days[flowers[i]-1] = i+1
 
