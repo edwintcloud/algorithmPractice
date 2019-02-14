@@ -1,4 +1,4 @@
-def iterative_quicksort(arr, begin=0, end=None):
+def iterative_quicksort(arr, begin=0, end=None, counter=0):
     '''iterative_quicksort is a recursive quicksorting algorithm'''
 
     # initialize values on first iteration
@@ -8,25 +8,38 @@ def iterative_quicksort(arr, begin=0, end=None):
     # sort until begin is greater than or equal to end
     if begin < end:
 
-        # starting index
-        i = begin-1
+        # starting index, counts size of group lesser than pivot
+        i = begin
 
         # iterate from begin to end, swaping elements to correct side of pivot(end)
         for j in range(begin, end):
+            counter += 1
             if arr[j] <= arr[end]:
-                i += 1
                 arr[i], arr[j] = arr[j], arr[i]
+                i += 1
 
-        # swap last two elements
-        arr[i+1], arr[end] = arr[end], arr[i+1]
+        # smaller elements are in range [begin..i] (inclusive)
+        # larger elements are in range [i+1..end-1]
+
+        # swap first element in group greater than pivot with the pivot
+        arr[i], arr[end] = arr[end], arr[i]
+        # now pivot is at index i+1
+        # smaller elements are in range [begin..i]
+        # larger elements are in range [i+2..end]
 
         # sort items before partition and after partition
-        iterative_quicksort(arr, begin, i)
-        iterative_quicksort(arr, i+2, end)
+        counter += iterative_quicksort(arr, begin, i-1)
+        counter += iterative_quicksort(arr, i+1, end)
+
+    # return total number of iterations it took to sort
+    return counter
 
 
 ## TEST ##
-arr = [2, 4, 5, 1, 3, 29, 9, 2, 12, 87]
-print("Number: ", arr)
-iterative_quicksort(arr)
-print("Sorted: ", arr)
+arr = [7, 10, 4, 3, 20, 15, 14, 13, 12, 10, 9,
+       8, 7, 6, 4, 3, 1, 4, 6, 82, 81, 1, 19, 24]
+arr = arr + arr
+print("Numbers:", arr)
+counter = iterative_quicksort(arr)
+print("Iterations:", counter)
+print("Sorted:", arr)
