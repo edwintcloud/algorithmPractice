@@ -40,3 +40,6 @@ The order is invalid, so return `""`.
 2. You may assume that if a is a prefix of b, then a must appear before b in the given dictionary.
 3. If the order is invalid, return an empty string.
 4. There may be multiple valid order of letters, return any one of them is fine.
+
+## Useful Resources:
+[Topological Sorting](https://www.geeksforgeeks.org/topological-sorting/)

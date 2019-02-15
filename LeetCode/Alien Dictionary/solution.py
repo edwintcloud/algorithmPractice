@@ -1,7 +1,6 @@
-# overall time complexity : 0(n)
-
-
 def alien_dict(words):
+    '''alien_dict finds the alphabetical order of a language derived using a-z
+       from the first few words that would appear in a dictionary of words for the language'''
 
     # initialize a dictionary to hold the letters than follow each letter in list of words
     graph = {}
