@@ -15,9 +15,9 @@ Given matrix = [
   [1, 0, 3, 0, 5]
 ]
 
-sumRegion(2, 1, 4, 3) -> 8
+sumRegion(2, 1, 4, 3) = 8
 update(3, 2, 2)
-sumRegion(2, 1, 4, 3) -> 10
+sumRegion(2, 1, 4, 3) = 10
 ```
 
 ## Note:
