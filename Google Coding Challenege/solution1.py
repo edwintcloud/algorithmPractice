@@ -16,20 +16,43 @@ class Solution:
 
         # sort indexes of A by values in A
         sorted_indexes = sorted(range(len(A)), key = lambda i: A[i])
+        
+        # generate list of indexes we can jump to next on odd jumps
         oddnext = self.makeStack(sorted_indexes)
-        sorted_indexes.sort(key = lambda i: -A[i])
+
+        # sort indexes of A by reverse order of their value in A
+        sorted_indexes.sort(key = lambda i: A[i], reverse = True)
+
+        # generate list of indexes we can jump to next on odd jumps
         evennext = self.makeStack(sorted_indexes)
 
+        # initialize odd and even lists that will contain
+        # the information of if an odd or even jump is 
+        # possible from the respective index
         odd = [False] * len(A)
         even = [False] * len(A)
+
+        # the last index is always counted
         odd[len(A)-1] = even[len(A)-1] = True
 
+        # iterate through A backwards, starting at next to last element
         for i in range(len(A)-2, -1, -1):
+
+            # if an odd jump is available from current index,
+            # check if an even jump landed on the index of the available
+            # odd jump and set current index in odd to True if it did
             if oddnext[i] is not None:
                 odd[i] = even[oddnext[i]]
+
+            # if an even jump is available from current index,
+            # check if an odd jump landed on the index of the available
+            # even jump and set current index in even to True if it did
             if evennext[i] is not None:
                 even[i] = odd[evennext[i]]
 
+        # return the number of spots marked True in odd
+        # we always start with an odd jump, so odd will
+        # contain the number of valid jumps to reach the end
         return sum(odd)
     
     # makes monotonic stack
@@ -40,9 +63,11 @@ class Solution:
             while stack and i > stack[-1]:
                 result[stack.pop()] = i
             stack.append(i)
+        # delete stack as a memory optimization
+        del stack
         return result
 
 ## test ##
 s = Solution()
-result = s.oddEvenJumps([2,3,1,1,4])
+result = s.oddEvenJumps([9,2,3,4,10])
 print(result)
